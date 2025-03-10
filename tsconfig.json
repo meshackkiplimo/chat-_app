@@ -4,9 +4,10 @@
     "module": "commonjs",
     "strict": true,
     "esModuleInterop": true,
-    "outDir": "./dist",
-    "rootDir": "./src"
+    "outDir": "./dist",  // Compiled .js files go here
+    "rootDir": "./src",  // Source .ts files are here
+    "sourceMap": true    // Optional: for debugging
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "dist"]
 }
